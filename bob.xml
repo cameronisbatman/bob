@@ -1,55 +1,60 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="135" inline="false" x="74" y="-1">
+  <block type="controls_if" id="1" inline="false" x="74" y="-1">
     <value name="IF0">
-      <block type="sensor_battery" id="78"></block>
+      <block type="sensor_battery" id="2"></block>
     </value>
     <statement name="DO0">
-      <block type="multimedia_playwav" id="269">
+      <block type="multimedia_playwav" id="3">
         <field name="WAV">low battery</field>
       </block>
     </statement>
     <next>
-      <block type="movement_forward" id="10">
+      <block type="movement_forward" id="4">
         <next>
-          <block type="movement_reverse" id="20">
+          <block type="movement_reverse" id="5">
             <next>
-              <block type="movement_left" id="30">
+              <block type="movement_left" id="6">
                 <next>
-                  <block type="movement_right" id="40">
+                  <block type="movement_right" id="7">
                     <next>
-                      <block type="movement_stop" id="51">
+                      <block type="movement_stop" id="8">
                         <next>
-                          <block type="movement_setmotors" id="71" inline="true">
+                          <block type="movement_setmotors" id="9" inline="true">
                             <value name="BOTHMOVLEFT">
-                              <block type="sensor_button" id="112">
-                                <field name="OBJECT">UP</field>
+                              <block type="sensor_button" id="10">
+                                <field name="OBJECT">LEFT</field>
                               </block>
                             </value>
                             <value name="BOTHMOVRIGHT">
-                              <block type="sensor_button" id="119">
-                                <field name="OBJECT">UP</field>
+                              <block type="sensor_button" id="11">
+                                <field name="OBJECT">RIGHT</field>
                               </block>
                             </value>
                             <next>
-                              <block type="multimedia_displaybmp" id="171">
+                              <block type="multimedia_displaybmp" id="12">
                                 <field name="BMP">im batman</field>
                                 <next>
-                                  <block type="expansion_servopower" id="177">
+                                  <block type="expansion_servopower" id="13">
                                     <field name="SERVO">ON</field>
                                     <next>
-                                      <block type="expansion_elevation" id="183" inline="true">
+                                      <block type="expansion_elevation" id="14" inline="true">
                                         <value name="NUMBER">
-                                          <block type="sensor_object" id="223">
+                                          <block type="sensor_object" id="15">
                                             <field name="OBJECT">REAR</field>
                                           </block>
                                         </value>
                                         <next>
-                                          <block type="expansion_gripper" id="157" inline="true">
+                                          <block type="expansion_gripper" id="16" inline="true">
                                             <value name="NUMBER">
-                                              <block type="sensor_button" id="164">
+                                              <block type="sensor_button" id="17">
                                                 <field name="OBJECT">ENTER</field>
                                               </block>
                                             </value>
+                                            <next>
+                                              <block type="oled_linerect" id="58">
+                                                <field name="OBJECT">RECT</field>
+                                              </block>
+                                            </next>
                                           </block>
                                         </next>
                                       </block>
