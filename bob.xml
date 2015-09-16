@@ -51,8 +51,13 @@
                                               </block>
                                             </value>
                                             <next>
-                                              <block type="oled_linerect" id="58">
+                                              <block type="oled_linerect" id="18">
                                                 <field name="OBJECT">RECT</field>
+                                                <next>
+                                                  <block type="multimedia_playwav" id="82">
+                                                    <field name="WAV">im batman</field>
+                                                  </block>
+                                                </next>
                                               </block>
                                             </next>
                                           </block>
